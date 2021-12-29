@@ -20,9 +20,9 @@ def convert_to_docx():
             name = n[0]
     path_input = cwd+"/output/"+name+".pdf"
     path_output = cwd+"/output/pdf_to_doc.docx"
-    cv = Converter(path_input)
-    cv.convert(path_output, start=0, end=None)
-    cv.close()
+    c = Converter(path_input)
+    c.convert(path_output, start=0, end=None)
+    c.close()
 
 if __name__ == "__main__":
     cwd = os.getcwd()
